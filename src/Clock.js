@@ -11,7 +11,7 @@ const Clock = (props) => {
         }, 1000)
 
         console.log(interval)
-
+        // It is an id, we need to keep this id
         return () => {
             console.log("I am unmouted")
             clearInterval(interval)
@@ -23,13 +23,3 @@ const Clock = (props) => {
 }
 
 export default Clock
-
-// 1 - We want a state for the time
-// 2 - We want to start the time,
-// when the components is mounted
-// 3- When the component is unmountend,
-// it stops the timer
-
-
-// -
-// Change the value of the state, with the current time, every seconds
